@@ -1,0 +1,110 @@
+.andASubheading,
+.landingPageTitle {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-family: inherit;
+}
+.landingPageTitle {
+  font-size: inherit;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+.andASubheading {
+  font-size: var(--subheading-size);
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-gray);
+}
+.button {
+  width: 99px;
+  height: 52px;
+  box-shadow: var(--button-shadow);
+}
+.copy {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.copyWrapper,
+.landingPage01Inner {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.copyWrapper {
+  width: 857px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.landingPage01Inner {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 5px 0 0;
+  text-align: center;
+  font-size: var(--title-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+}
+.imageDragInToFill {
+  height: 640px;
+  flex: 1;
+  position: relative;
+  border-radius: 8px;
+  max-width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.imageDragInToFillWrapper,
+.landingPage01 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.imageDragInToFillWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 6px;
+  max-width: 100%;
+}
+.landingPage01 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: column;
+  padding: 56px 80px 48px;
+  gap: 114px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 975px) {
+  .landingPageTitle {
+    font-size: 51px;
+  }
+  .landingPage01 {
+    gap: 57px;
+    padding-left: var(--padding-21xl);
+    padding-right: var(--padding-21xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .landingPageTitle {
+    font-size: 38px;
+  }
+  .andASubheading {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .landingPage01 {
+    gap: 28px;
+  }
+}

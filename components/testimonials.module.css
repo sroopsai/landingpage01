@@ -1,0 +1,79 @@
+.heading,
+.subheadingToIntroduce {
+  margin: 0;
+  position: relative;
+  font-family: inherit;
+}
+.heading {
+  align-self: stretch;
+  font-size: inherit;
+  line-height: 110%;
+  font-weight: 600;
+}
+.subheadingToIntroduce {
+  width: 625px;
+  font-size: var(--subheading-size);
+  line-height: 150%;
+  font-weight: 400;
+  color: var(--color-gray);
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.cards,
+.testimonials,
+.testimonialsHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.testimonialsHeading {
+  width: 733px;
+  flex-direction: column;
+  gap: var(--gap-5xs);
+}
+.cards,
+.testimonials {
+  align-self: stretch;
+}
+.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  font-size: var(--body-text-size);
+}
+.testimonials {
+  flex-direction: column;
+  padding: 0 0 var(--padding-6xs);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-black);
+  font-family: var(--small-text);
+}
+@media screen and (max-width: 975px) {
+  .heading {
+    font-size: var(--font-size-13xl);
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 725px) {
+  .cards {
+    gap: var(--spacing-sm);
+  }
+  .testimonials {
+    gap: var(--gap-base);
+  }
+}
+@media screen and (max-width: 450px) {
+  .heading {
+    font-size: var(--subheading-size);
+    line-height: 26px;
+  }
+  .subheadingToIntroduce {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+}
