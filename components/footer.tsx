@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
+import { memo } from "react";
 
 export type FooterType = {
   className?: string;
 };
 
-const Footer: NextPage<FooterType> = ({ className = "" }) => {
+const Footer: NextPage<FooterType> = memo(({ className = "" }) => {
   return (
     <footer
       className={`self-stretch flex flex-col items-start justify-start gap-[2.875rem] max-w-full text-left text-[1.5rem] text-black font-small-text mq725:gap-[1.438rem] ${className}`}
@@ -89,6 +90,6 @@ const Footer: NextPage<FooterType> = ({ className = "" }) => {
       </div>
     </footer>
   );
-};
+});
 
 export default Footer;

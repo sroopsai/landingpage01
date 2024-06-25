@@ -1,11 +1,12 @@
 import type { NextPage } from "next";
+import { memo } from "react";
 import CustomerQuote from "./customer-quote";
 
 export type TestimonialsType = {
   className?: string;
 };
 
-const Testimonials: NextPage<TestimonialsType> = ({ className = "" }) => {
+const Testimonials: NextPage<TestimonialsType> = memo(({ className = "" }) => {
   return (
     <section
       className={`self-stretch flex flex-col items-start justify-start pt-[0rem] px-[0rem] pb-[0.437rem] box-border gap-[2rem] max-w-full text-left text-[2.5rem] text-black font-small-text mq725:gap-[1rem] ${className}`}
@@ -34,6 +35,6 @@ const Testimonials: NextPage<TestimonialsType> = ({ className = "" }) => {
       </div>
     </section>
   );
-};
+});
 
 export default Testimonials;
